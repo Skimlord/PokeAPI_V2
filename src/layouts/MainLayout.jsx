@@ -3,6 +3,7 @@ import PokemonContextProvider from "../contexts/PokemonContext";
 import Home from "../pages/Home";
 import Info from "../pages/Info";
 import Pokemons from "../pages/Pokemons";
+import Pokemon from "../components/Pokemon";
 
 const MainLayout = () => {
   return (
@@ -32,6 +33,7 @@ const MainLayout = () => {
           <Route index element={<Home />} />
           <Route path="info/191223" element={<Info />} />
           <Route path="pokemons" element={<Pokemons />} />
+          <Route path="pokemons/:pokemonName" element={<Pokemon />} />
         </Routes>
         <Outlet />
       </PokemonContextProvider>
