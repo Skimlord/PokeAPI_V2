@@ -3,13 +3,14 @@ import PokemonContextProvider from "../contexts/PokemonContext";
 import Home from "../pages/Home";
 import Info from "../pages/Info";
 import Pokemons from "../pages/Pokemons";
+import Pokemon from "../components/Pokemon";
 
 const MainLayout = () => {
   return (
     <div>
       <PokemonContextProvider>
         <div className="flex justify-center text-center font-pokemon">
-          <nav className="flex flex-row items-center justify-between w-[50rem] p-5">
+          <nav className="flex flex-row items-center justify-between w-[50rem] p-5 bg-white">
             <img
               src="/src/assets/logo.png"
               alt="Poke API Logo"
@@ -32,6 +33,7 @@ const MainLayout = () => {
           <Route index element={<Home />} />
           <Route path="info/191223" element={<Info />} />
           <Route path="pokemons" element={<Pokemons />} />
+          <Route path="pokemons/:pokemonName" element={<Pokemon />} />
         </Routes>
         <Outlet />
       </PokemonContextProvider>
