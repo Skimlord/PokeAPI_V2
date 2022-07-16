@@ -3,11 +3,11 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 const Pokemon = () => {
-    const { pokemonName } = useParams()
+    const { pokemonId } = useParams()
     const [ pokemonInfo, setPokemonInfo] = useState([]);
     useEffect(() => {
       axios({
-        url: `https://pokeapi.co/api/v2/pokemon/${pokemonName}`,
+        url: `https://pokeapi.co/api/v2/pokemon/${pokemonId}`,
       })
         .then((response) => {
           setPokemonInfo(response.data);
