@@ -9,7 +9,7 @@ const PokemonList = () => {
       <div className="flex flex-row flex-wrap justify-around border-solid border-8 rounded-2xl border-[#737384] p-3 bg-white">
         {searchPokemon().map((pokemon, index) => (
           <div className="w-1/4 cursor-pointer p-3 rounded-2xl hover:bg-[#737384]" key={index}>
-            <Link to={`/pokemons/${index + 1}`}>
+            <Link to={`/pokemons/${pokemon.name}`}>
               <img
                 className="w-full rounded-lg"
                 src={`https://img.pokemondb.net/sprites/yellow/normal/${pokemon.name}.png`}

@@ -51,7 +51,7 @@ const MainLayout = () => {
           <Route index element={<Home />} />
           <Route path="info/191223" element={<Info />} />
           <Route path="pokemons" element={<Pokemons />} />
-          <Route path="pokemons/:pokemonId" element={<Pokemon />} />
+          <Route path="pokemons/:pokemonName" element={<Pokemon />} />
         </Routes>
         <Outlet />
       </PokemonContextProvider>
