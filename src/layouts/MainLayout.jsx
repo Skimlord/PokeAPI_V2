@@ -20,7 +20,7 @@ const MainLayout = () => {
         <div className="flex justify-center text-center font-pokemon">
           <nav className="flex flex-row items-center justify-between w-[50rem] p-5 bg-white">
             <img
-              src="/src/assets/logo.png"
+              src="./src/assets/logo.png"
               alt="Poke API Logo"
               className="w-1/4"
             />
