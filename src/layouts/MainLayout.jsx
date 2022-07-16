@@ -8,6 +8,8 @@ import Info from "../pages/Info";
 import Pokemons from "../pages/Pokemons";
 import Pokemon from "../components/Pokemon";
 
+import Logo from "../assets/logo.png";
+
 const MainLayout = () => {
   const { i18n, t } = useTranslation();
 
@@ -20,7 +22,7 @@ const MainLayout = () => {
         <div className="flex justify-center text-center font-pokemon">
           <nav className="flex flex-row items-center justify-between w-[50rem] p-5 bg-white">
             <img
-              src="./src/assets/logo.png"
+              src={Logo}
               alt="Poke API Logo"
               className="w-1/4"
             />
