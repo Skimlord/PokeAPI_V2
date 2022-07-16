@@ -22,9 +22,9 @@ const MainLayout = () => {
             <img
               src="/src/assets/logo.png"
               alt="Poke API Logo"
-              className="w-1/3"
+              className="w-1/4"
             />
-            <ul className="flex flex-col justify-evenly w-4/6 md:flex-row">
+            <ul className="flex flex-col justify-evenly w-2/4 md:flex-row">
               <li className="hover:underline cursor-pointer text-sm md:text-base">
                 <Link to="/">{t("nav_home")}</Link>
               </li>
