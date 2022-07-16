@@ -10,6 +10,9 @@ import Pokemon from "../components/Pokemon";
 
 import Logo from "../assets/logo.png";
 
+import MexicoFlag from "../assets/mexicoflag.png"
+import UsaFlag from "../assets/usaflag.png"
+
 const MainLayout = () => {
   const { i18n, t } = useTranslation();
 
@@ -39,11 +42,11 @@ const MainLayout = () => {
             </ul>
             <div className="link-container flex flex-col justify-between h-10">
               <img
-                src="/src/assets/mexicoflag.png"
+                src={MexicoFlag}
                 onClick={() => changeLaguage("es")}
               />
               <img
-                src="/src/assets/usaflag.png"
+                src={UsaFlag}
                 onClick={() => changeLaguage("en")}
               />
             </div>
