@@ -13,6 +13,7 @@ import Logo from "../assets/logo.png";
 import MexicoFlag from "../assets/mexicoflag.png"
 import UsaFlag from "../assets/usaflag.png"
 
+
 const MainLayout = () => {
   const { i18n, t } = useTranslation();
 
